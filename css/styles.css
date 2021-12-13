@@ -12,6 +12,7 @@
   --icon-color: rgba(175, 177, 184, 1);
   --icon-hover-color: #fff;
   --footer-invitation-bg: rgba(255, 255, 255, 0.1);
+  --backdrop-color: rgba(0, 0, 0, 0.2);
 }
 
 /* цвет фона #e5e5e5 */
@@ -549,4 +550,45 @@ address {
 .invitation .social-link:hover,
 .invitation .social-link:focus {
   background-color: var(--button-color);
+}
+
+/* -------------оформление модалки-------------- */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--backdrop-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  background-color: #fff;
+  position: relative;
+}
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
