@@ -113,6 +113,9 @@ h3 {
 .pages a.link {
   color: var(--button-color);
   position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link::after {
@@ -129,6 +132,9 @@ h3 {
 .contacts a {
   color: var(--primery-text-color);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pages a:hover,
@@ -149,7 +155,7 @@ h3 {
   fill: currentColor;
 }
 
-/* Оформление основной части */
+/*------------ Оформление основной части--------- */
 
 .baner {
   max-width: 1600px;
@@ -199,6 +205,14 @@ h3 {
   text-align: center;
   box-shadow: 0px 4px 4px var(rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover {
+  background-color: var(--icon-hover-color);
+  color: var(--button-color);
 }
 
 /* <!-- секция с преимуществами --> */
@@ -377,6 +391,9 @@ h3 {
   justify-content: center;
   align-items: center;
   color: var(--icon-color);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-icon {
@@ -412,6 +429,9 @@ h3 {
   border: 1px solid var(--border-clients-color);
   border-radius: 4px;
   color: var(--icon-color);
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item-icon {
@@ -450,6 +470,9 @@ h3 {
   padding: 6px 22px;
   border: none;
   border-radius: 4px;
+  transition-property: box-shadow, color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter:hover,
@@ -612,6 +635,9 @@ address {
 .invitation .social-link {
   color: var(--icon-hover-color);
   background-color: var(--footer-invitation-bg);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .invitation .social-link:hover,
